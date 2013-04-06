@@ -1,8 +1,12 @@
+<?php
+require_once("inc/util.bft.php");
+?>
 <!DOCTYPE HTML>
 <html>
 
 <head>
 	<link rel="stylesheet" type="text/css" href="css/bft.css">
+	<title>Brendan F. Taylor</title>
 </head>
 
 <body>
@@ -27,16 +31,7 @@
 		</table>
 	</div>
 	<div id="nav">
-		<ul>
-			<li><a href="manage.php">Manager</a></li>
-			<li><a href="engineer.php">Engineer</a></li>
-			<li><a href="product.php">Products</a></li>
-			<li><a href="product.php">Projects</a></li>
-			<li><a href="renewable.php">Renewable Energy</a></li>
-			<li><a href="education.php">Education</a></li>
-			<li><a href="music.php">Music</a></li>
-			<li><a href="activity.php">Activity</a></li>
-		</ul>
+<?php get_nav(); ?>
 	</div>
 
 	<div id="content">
