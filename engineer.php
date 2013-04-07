@@ -18,7 +18,7 @@ require_once("inc/util.bft.php");
 
 	<div id="content">
 		
-		<h3>Skills</h3>
+		<h2>Skills</h2>
 		<ul>
 			<li>Engineering leadership including systems engineering, architecture design and lead software engineering</li>
 			<li>Wind and solar resource assessment</li>
@@ -32,8 +32,8 @@ require_once("inc/util.bft.php");
 			<li>Workstation software development in Visual Basic 6</li>
 		</ul>
 		
-		<h3>Engineering Experience</h3>
-		<table>
+		<h2>Engineering Experience</h2>
+		<table class="job">
 			<tr><td class="fb">Lead Systems Engineer, Resource Assessment</td><td class="ar">July 2012 - March 2013</td></tr>
 			<tr><td>NRG Systems</td><td class="ar">Hinesburg, Vermont</td></tr>
 		</table>
@@ -52,9 +52,11 @@ require_once("inc/util.bft.php");
 				solutions</li>
 			<li>Participated in product design activities including issue analysis and resolution, test design and 
 				analysis, and design reviews</li>
+			<li>Developed user manual using <a href="http://www.docbook.org/">DOCBOOK</a> structured document standard 
+				to enable generation of manual in multiple media from the same source</li>
 		</ul>
 		
-		<table>
+		<table class="job">
 			<tr><td class="fb">Software Engineer</td><td class="ar">January 2002 - February 2009</td></tr>
 			<tr><td>Northern Power Systems</td><td class="ar">Barre, Vermont</td></tr>
 		</table>
@@ -77,7 +79,7 @@ require_once("inc/util.bft.php");
 			</li>
 		</ul>
 
-		<table>
+		<table class="job">
 			<tr><td class="fb">Applications Engineer</td><td class="ar">June 2000 - January 2002</td></tr>
 		</table>
 		<ul>
@@ -91,7 +93,7 @@ require_once("inc/util.bft.php");
 			</li>
 		</ul>
 		
-		<table>
+		<table class="job">
 			<tr><td class="fb">Research Engineer</td><td class="ar">June 1997 - June 2000</td></tr>
 			<tr><td>University of Massachusetts Amherst Wind Energy Center</td><td class="ar">Amherst, Massachusetts</td></tr>
 		</table>
@@ -115,7 +117,7 @@ require_once("inc/util.bft.php");
 				presentation of results
 			</li>
 	</div>
-<?php include("inc/footer.php"); ?>
+
 </div>
 </body>
 

@@ -17,7 +17,7 @@ require_once("inc/util.bft.php");
 	</div>
 
 	<div id="content">
-		<h3>Skills</h3>
+		<h2>Skills</h2>
 		<ul>
 			<li>Manages multi-discipline teams including mechanical, electrical, software and controls engineering</li>
 			<li>Manages technically complex product development programs from inception through market introduction</li>
@@ -27,9 +27,9 @@ require_once("inc/util.bft.php");
 			<li>Ability to think critically, logically and make difficult technical decisions using structured methods</li>
 			<li>Leads process design and continuous improvement to achieve employee buy-in and improve efficiency</li>
 		</ul>
-		<h3>Management Experience</h3>
+		<h2>Management Experience</h2>
 
-		<table>
+		<table class="job">
 			<tr><td class="fb">Engineering Manager, Instruments</td><td class="ar">February 2009 - July 2012</td></tr>
 			<tr><td>NRG Systems</td><td class="ar">Hinesburg, Vermont</td></tr>
 		</table>
@@ -68,9 +68,13 @@ require_once("inc/util.bft.php");
 				Led engineering process development and continuous improvement teams for electrical and software 
 				disciplines, including preparation for ISO 9001 certification
 			</li>
+			<li>
+				Developed and presented "Learning Lab" training class on how wind turbines work, including wind turbine 
+				design history
+			</li>
 		</ul>
 
-		<table>
+		<table class="job">
 			<tr><td class="fb">Engineering Manager, Software and Controls</td><td class="ar">January 2007 - February 2009</td></tr>
 			<tr><td>Northern Power Systems</td><td class="ar">Barre, Vermont</td></tr>
 		</table>
@@ -98,7 +102,7 @@ require_once("inc/util.bft.php");
 			</li>
 		</ul>
 
-		<table>
+		<table class="job">
 			<tr><td class="fb">Technical Group Leader, Software and Controls</td><td class="ar">January 2005 - January 2007</td></tr>
 		</table>
 		<ul>
@@ -115,7 +119,7 @@ require_once("inc/util.bft.php");
 			</li>
 		</ul>
 
-		<table>
+		<table class="job">
 			<tr><td class="fb">Project Manager</td><td class="ar">March 2001 - January 2002</td></tr>
 		</table>
 		<ul>
@@ -129,7 +133,7 @@ require_once("inc/util.bft.php");
 			</li>
 		</ul>
 	</div>
-<?php include("inc/footer.php"); ?>
+
 </div>
 </body>
 

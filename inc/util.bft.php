@@ -3,8 +3,8 @@
 function get_nav($current_page = null) {
 
 	$html = "<ul>\n";
-	$pages = array("Manager"=>"manager.php", "Engineer"=>"engineer.php", "Education"=>"education.php", 
-		"Music"=>"music.php", "Activities"=>"activities.php");
+	$pages = array("Summary"=>"index.php", "Manager"=>"manager.php", "Engineer"=>"engineer.php", "Education"=>"education.php", 
+		"Music"=>"music.php", "Activities"=>"activities.php", "Contact"=>"contact.php");
 	foreach ($pages as $key => $value) {
 		$html .= "<li";
 		if ($current_page == $key) {

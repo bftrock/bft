@@ -12,26 +12,10 @@ require_once("inc/util.bft.php");
 <body>
 <div id="container">
 	<div id="header">
-		<table>
-			<tr>
-				<td>
-					<h1>Brendan F. Taylor</h1></td><td class="ar" rowspan="2">
-					<img src="img/bft.jpg"></img>
-				</td>
-			</tr>
-			<tr>
-				<td>		
-					<p>
-						<span><a href="mailto:bftrock@gmail.com">bftrock@gmail.com</a></span>&nbsp;&bull;&nbsp;
-						<span>80 Hadley Road, South Burlington, VT 05403</span>&nbsp;&bull;&nbsp;
-						<span>802-355-1612</span>
-					</p>
-				</td>
-			</tr>
-		</table>
+<?php include("inc/header.php"); ?>
 	</div>
 	<div id="nav">
-<?php get_nav(); ?>
+<?php get_nav("Summary"); ?>
 	</div>
 
 	<div id="content">
@@ -49,16 +33,15 @@ require_once("inc/util.bft.php");
 			<li>15 years of experience in renewable energy engineering including wind and solar</li>
 			<li>8 years of engineering management experience leading mechanical, electrical and software disciplines, including embedded systems</li>
 			<li>5 years of project management experience leading technically complex product development from inception to production</li>
-			<li>Strategic planning for product development, department and company goals</li>
+			<li>Strategic planning and execution of product development, department and company goals</li>
 			<li>Product management</li>
 			<li>Systems and software engineering, including cloud-hosted web applications</li>
-			<li>Process development and continuous improvement</li>
+			<li>Effective process development and continuous improvement</li>
 			<li>Excellent written and verbal communication, presentation and training skills</li>
 			<li>Ability to think critically, logically and make complex decisions</li>
 			<li>Ability to analyze and understand customer needs, then innovate product ideas to meet those needs</li>
 		</ul>
 	</div>
-<?php include("inc/footer.php"); ?>
 </div>
 </body>
 
