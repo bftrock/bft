@@ -7,12 +7,14 @@ if (isset($_POST['message'])) {
 	$username = "";
 	$password = ""
 	$to = "bftrock@gmail.com";
+	$from = $_POST['email'];
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
-	$headers = "From: {$_POST['email']}\r\nReply-To: {$_POST['email']}\r\nX-Mailer: PHP/" . phpversion();
-	$smtp = Mail:factory('smtp', array("host" => $host, "auth" => true, "username" => $username, "password" => $password));
+	$headers = array("From"=>$from, "To"=>$to, "Subject"=>$subject);
+	//$headers = "From: {$_POST['email']}\r\nReply-To: {$_POST['email']}\r\nX-Mailer: PHP/" . phpversion();
+	$smtp = Mail::factory('smtp', array("host" => $host, "auth" => true, "username" => $username, "password" => $password));
 	$mail = $smtp->send($to, $headers, $message);
-	if (PEAR:isError($mail)) {
+	if (PEAR::isError($mail)) {
 		die("{$mail->getMessage()}");
 	}
 	header("Location:contact.php?m=a");
