@@ -4,14 +4,13 @@ require_once("Mail.php");
 
 if (isset($_POST['message'])) {
 	$host = "ssl://smtp.gmail.com:465";
-	$username = "";
-	$password = ""
+	$username = "bftrock@gmail.com";
+	$password = "";
 	$to = "bftrock@gmail.com";
 	$from = $_POST['email'];
 	$subject = $_POST['subject'];
-	$message = $_POST['message'];
+	$message = "From: {$from}\nMessage: {$_POST['message']}";
 	$headers = array("From"=>$from, "To"=>$to, "Subject"=>$subject);
-	//$headers = "From: {$_POST['email']}\r\nReply-To: {$_POST['email']}\r\nX-Mailer: PHP/" . phpversion();
 	$smtp = Mail::factory('smtp', array("host" => $host, "auth" => true, "username" => $username, "password" => $password));
 	$mail = $smtp->send($to, $headers, $message);
 	if (PEAR::isError($mail)) {
