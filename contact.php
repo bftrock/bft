@@ -1,12 +1,26 @@
 <?php
 require_once("inc/util.bft.php");
+require_once("Mail.php");
 
 if (isset($_POST['message'])) {
+	$host = "ssl://smtp.gmail.com:465";
+	$username = "";
+	$password = ""
 	$to = "bftrock@gmail.com";
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
 	$headers = "From: {$_POST['email']}\r\nReply-To: {$_POST['email']}\r\nX-Mailer: PHP/" . phpversion();
-	mail($to, $subject, $message, $headers);		
+	$smtp = Mail:factory('smtp',
+		array("host" => $host,
+			"auth" => true,
+			"username" => $username,
+			"password" => $password
+		)
+	);
+	$mail => $smtp->send($to, $headers, $message);
+	if (PEAR:isError($mail)) {
+		die("{$mail->getMessage()}");
+	}
 	header("Location:contact.php?m=a");
 }
 $ack = null;
